@@ -1,5 +1,11 @@
+import { Header } from './components';
+
 function App() {
-  return <h1>Hello from ShareTrip!</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;

@@ -1,0 +1,10 @@
+export { ReactComponent as ArrowMoveForwardIcon } from './arrow-move-forward.svg';
+export { ReactComponent as ArrowMoveBackwardIcon } from './arrow-move-backward.svg';
+export { ReactComponent as BusMoveBackwardIcon } from './bus-move-backward.svg';
+export { ReactComponent as BusMoveForwardIcon } from './bus-move-forward.svg';
+export { ReactComponent as CoinIcon } from './coin.svg';
+export { ReactComponent as DiamondIcon } from './diamond.svg';
+export { ReactComponent as ProfileBoxIcon } from './profile.svg';
+export { ReactComponent as SpinWheelIcon } from './spin-wheel.svg';
+export { ReactComponent as TripCoinIcon } from './trip-coin.svg';
+export { ReactComponent as ZapIcon } from './zap.svg';
