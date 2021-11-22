@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowMoveOnwardIcon, ArrowMoveReturnIcon, BusMoveOnwardIcon, BusMoveReturnIcon } from '../../assets/icons';
+import { Button } from '../../common/Button';
 
 export const BusHeader = () => {
   const [journey, setJourney] = useState([]);
@@ -49,7 +50,7 @@ export const BusHeader = () => {
             <span>{journey.returnJourney?.date}</span>
           </div>
         </div>
-        <button className="btn btn--main btn--lg bus-header__action">Modify Search</button>
+        <Button text="Modify Search" variant="primary" size="lg" />
       </div>
     </div>
   );

@@ -1,0 +1,14 @@
+.bus-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $shadow-sm;
+  border: 1px solid $color-light;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  overflow: hidden;
+
+  & > * {
+    flex: 1;
+  }
+}

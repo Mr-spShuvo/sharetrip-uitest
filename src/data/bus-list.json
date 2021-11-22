@@ -1,0 +1,9 @@
+[
+  { "id": "1", "busCompany": "Hanif Enterprize", "busCount": 40 },
+  { "id": "2", "busCompany": "Shohag Paribahan", "busCount": 32 },
+  { "id": "3", "busCompany": "Ena Transport (Pvt) Ltd", "busCount": 54 },
+  { "id": "4", "busCompany": "Sainmartin Travels", "busCount": 61 },
+  { "id": "5", "busCompany": "Soudia Coach Service", "busCount": 78 },
+  { "id": "6", "busCompany": "Sainmartin Hyundai", "busCount": 29 },
+  { "id": "7", "busCompany": "Shamoli Paribahan", "busCount": 40 }
+]

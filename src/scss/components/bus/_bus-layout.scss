@@ -1,0 +1,25 @@
+.bus-layout {
+  padding-top: 3rem;
+  position: relative;
+
+  & > .container {
+    display: flex;
+    flex: 1;
+    gap: 3rem;
+  }
+
+  &__filter {
+    width: 30rem;
+    background-color: $color-light;
+    min-height: 71vh;
+    height: 100%;
+    box-shadow: $shadow-sm;
+    border-radius: 0.6rem;
+    position: sticky;
+    top: 0;
+  }
+
+  &__body {
+    max-width: calc(100% - 33rem);
+  }
+}
