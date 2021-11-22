@@ -1,11 +1,12 @@
 $color-primary: #1882ff;
-$color-primary-light: #acc0ec;
+$color-primary-light: #e5f2fe;
 $color-primary-dark: #3062d0;
-
+$color-accent: #ef7e46;
 $color-text: #000;
 $color-darker: #4c4c4c;
 $color-dark: #757575;
-$color-gray: #e5e5e9;
+$color-gray: #c7c7cc;
+$color-light-gray: #e5e5e9;
 $color-light: #f6f6f6;
 $color-white: #fff;
 
@@ -21,3 +22,9 @@ $transition-sm: all 0.3s ease-in-out;
 $shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.12);
 $shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.15);
 $shadow-lg: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+$border-sm: 1px solid $color-light;
+
+$radius-sm: 3px;
+$radius-md: 6px;
+$radius-full: 100rem;

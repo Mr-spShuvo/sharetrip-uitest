@@ -19,7 +19,7 @@
     &.active {
       opacity: 1;
       background-color: rgba($color-white, 0.1);
-      border-radius: 0.6rem;
+      border-radius: $radius-md;
     }
 
     svg {

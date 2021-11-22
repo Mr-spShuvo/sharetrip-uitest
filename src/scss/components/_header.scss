@@ -50,14 +50,15 @@
     & > *:last-child {
       gap: 0;
       background-color: $color-primary;
-      border-radius: 100rem;
+      border-radius: $radius-full;
       padding: 0.4rem;
+
       span {
         @include flex-center;
         width: 4.2rem;
         height: 4.2rem;
         background-color: $color-primary-dark;
-        border-radius: 50%;
+        border-radius: $radius-full;
       }
       svg:first-child {
         width: 24px;

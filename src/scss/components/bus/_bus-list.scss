@@ -1,8 +1,8 @@
 .bus-list {
   display: flex;
   box-shadow: $shadow-sm;
-  border: 1px solid $color-light;
-  border-radius: 0.5rem;
+  border: $border-sm;
+  border-radius: $radius-md;
   overflow: hidden;
 
   &__wrapper {
@@ -10,7 +10,7 @@
     overflow-x: hidden;
 
     & > * {
-      border-right: 1px solid $color-gray;
+      border-right: 1px solid $color-light-gray;
       min-width: 18rem;
     }
   }
@@ -30,11 +30,11 @@
     }
 
     &--prev {
-      border-right: 1px solid $color-gray;
+      border-right: 1px solid $color-light-gray;
     }
 
     &--next {
-      border-left: 1px solid $color-gray;
+      border-left: 1px solid $color-light-gray;
     }
   }
 }

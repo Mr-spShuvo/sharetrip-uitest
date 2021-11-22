@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: $shadow-sm;
-  border: 1px solid $color-light;
-  border-radius: 0.5rem;
+  border: $border-sm;
+  border-radius: $radius-md;
   margin-top: 1rem;
   overflow: hidden;
 

@@ -1,13 +1,13 @@
 .btn {
   background: transparent;
   outline-color: transparent;
-  border: none;
-  font-weight: $font-medium;
-  text-transform: uppercase;
-  box-shadow: $shadow-sm;
   padding: 0.8rem 1.6rem;
   line-height: 2rem;
-  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: $font-medium;
+  border: none;
+  border-radius: $radius-sm;
+  box-shadow: $shadow-sm;
   transition: $transition-sm;
 
   &:hover {

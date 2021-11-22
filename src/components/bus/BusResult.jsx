@@ -4,6 +4,7 @@ import { mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 
 import { ListCard } from '../../common';
 import { CoinIcon, DiamondIcon, ZapIcon } from '../../assets/icons';
+import { BusCard } from './BusCard';
 
 const selectionOption = [
   { id: 1, icon: <DiamondIcon />, title: 'Earliest Buses' },
@@ -44,6 +45,7 @@ export const BusResult = () => {
           <ListCard key={option.id} icon={option.icon} title={option.title} active={selectedOption.id === option.id} onClick={() => handleSelectOption(option)} />
         ))}
       </div>
+      <BusCard />
     </div>
   );
 };
