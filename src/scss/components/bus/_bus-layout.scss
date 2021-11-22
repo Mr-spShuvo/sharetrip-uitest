@@ -6,6 +6,10 @@
     display: flex;
     flex: 1;
     gap: 3rem;
+
+    @include media-queries(atMediumLarge) {
+      gap: 0;
+    }
   }
 
   &__filter {
@@ -17,9 +21,17 @@
     border-radius: $radius-md;
     position: sticky;
     top: 0;
+
+    @include media-queries(atMediumLarge) {
+      display: none;
+    }
   }
 
   &__body {
+    width: 100%;
     max-width: calc(100% - 33rem);
+    @include media-queries(atMediumLarge) {
+      max-width: unset;
+    }
   }
 }

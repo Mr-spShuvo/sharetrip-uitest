@@ -7,6 +7,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    & > * {
+      @include media-queries(atMediumLarge) {
+        &:last-child {
+          flex-basis: 100%;
+        }
+      }
+
+      @include media-queries(680px) {
+        flex-basis: 100%;
+      }
+    }
   }
 
   &__journey {

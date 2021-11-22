@@ -1,0 +1,43 @@
+.bus-list {
+  .splide {
+    padding: 0;
+    &__pagination {
+      display: none;
+    }
+
+    &__slide {
+      border-right: 1px solid $color-gray;
+    }
+
+    &__arrow {
+      background-color: $color-white;
+      opacity: 1;
+      width: 5rem;
+      height: 100%;
+      border-radius: unset;
+
+      svg {
+        fill: $color-dark;
+      }
+
+      &:hover {
+        opacity: 1;
+        background-color: $color-primary;
+        color: $color-white;
+        svg {
+          fill: $color-white;
+        }
+      }
+
+      &--prev {
+        left: 0;
+        border-right: 1px solid $color-light-gray;
+      }
+
+      &--next {
+        right: 0;
+        border-left: 1px solid $color-light-gray;
+      }
+    }
+  }
+}

@@ -8,6 +8,10 @@
 
   &__logo {
     margin-right: 4.8rem;
+
+    svg {
+      height: 4.8rem;
+    }
   }
 
   &__nav {
@@ -15,11 +19,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-queries(atLarge) {
+      opacity: 0;
+      pointer-events: none;
+      position: fixed;
+      flex-direction: column;
+      background-color: $color-light;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 111;
+      justify-content: center;
+      align-items: flex-start;
+      font-size: 2rem;
+      padding-left: 15%;
+
+      &.active {
+        opacity: 1;
+        pointer-events: all;
+        animation: anim-from-left 0.5s ease-in-out;
+      }
+    }
   }
 
   &__menu {
     list-style: none;
     display: flex;
+
+    @include media-queries(atLarge) {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     &__item {
       padding: 0.8rem;
@@ -30,6 +63,9 @@
         &:hover,
         &.active {
           color: $color-primary;
+          @include media-queries(atLarge) {
+            border-bottom: 2px solid $color-primary-dark;
+          }
         }
       }
     }
@@ -39,6 +75,15 @@
     display: flex;
     align-items: center;
     gap: 2.4rem;
+
+    @include media-queries(atLarge) {
+      margin-top: 2rem;
+      padding-top: 3rem;
+      gap: 2rem;
+      border-top: 2px solid $color-light-gray;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
     & > * {
       display: flex;
@@ -65,6 +110,25 @@
         height: 24px;
         color: $color-white;
       }
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+    padding: 0.5rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    color: $color-primary;
+    border-radius: $radius-full;
+    background-color: $color-primary-light;
+    box-shadow: $shadow-sm;
+    border: 1px solid $color-light-gray;
+    position: relative;
+    z-index: 999;
+
+    @include media-queries(atLarge) {
+      @include flex-center;
+      margin-left: auto;
     }
   }
 }

@@ -10,7 +10,6 @@ export const BusLayout = () => {
           <BusResult />
         </div>
       </div>
-      ;
     </section>
   );
 };

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "type": "AC",
+    "name": "Hanif Enterprize",
+    "numberPlate": "31-DHK-CTG(D)",
+    "tripCoin": 55,
+    "from": {
+      "place": "Dhaka",
+      "departedPlace": "Kolabagan Counter",
+      "time": "11.30PM",
+      "date": "22 June 2021"
+    },
+    "to": {
+      "place": "Chottogram",
+      "departedPlace": "Dampara Counter",
+      "time": "05.30AM",
+      "date": "23 June 2021"
+    },
+    "price": {
+      "regular": 775,
+      "offer": 750
+    },
+    "seats": 16,
+    "estimatedTime": "6h 00m"
+  },
+  {
+    "id": "2",
+    "type": "Non-AC",
+    "name": "Shohag Paribahan",
+    "numberPlate": "CA-DHK-CTG(S)",
+    "tripCoin": 40,
+    "from": {
+      "place": "Dhaka",
+      "departedPlace": "Kolabagan Counter",
+      "time": "10.30PM",
+      "date": "22 June 2021"
+    },
+    "to": {
+      "place": "Chottogram",
+      "departedPlace": "Dampara Counter",
+      "time": "06.00AM",
+      "date": "23 June 2021"
+    },
+    "price": {
+      "regular": 550,
+      "offer": 500
+    },
+    "seats": 7,
+    "estimatedTime": "6h 30m"
+  }
+]

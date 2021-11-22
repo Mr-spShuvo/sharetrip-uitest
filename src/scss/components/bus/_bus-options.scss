@@ -7,8 +7,12 @@
   border-radius: $radius-md;
   margin-top: 1rem;
   overflow: hidden;
+  flex-wrap: wrap;
 
   & > * {
     flex: 1;
+    @include media-queries(720px) {
+      flex-basis: 50%;
+    }
   }
 }

@@ -1,10 +1,13 @@
+@import '@splidejs/splide/dist/css/splide.min.css';
 @import './modules/abstract';
 @import './modules/mixins';
 @import './modules/base';
 @import './modules/utils';
+@import './modules/animation';
 
 @import './common/btn';
 @import './common/list-card';
+@import './common/splide';
 
 @import './components/header';
 
