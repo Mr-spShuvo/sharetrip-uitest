@@ -3,3 +3,7 @@
   max-width: 127.5rem;
   margin: auto;
 }
+
+.flex-center {
+  @include flex-center;
+}

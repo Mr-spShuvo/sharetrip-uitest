@@ -7,18 +7,7 @@ export const BusHeader = () => {
   const [activeJourney, setActiveJourney] = useState('onward');
 
   useEffect(() => {
-    setJourney({
-      onwardJourney: {
-        type: 'onward',
-        destination: 'Dhaka - Chottogram',
-        date: '22 June, 2021 (Tuesday)'
-      },
-      returnJourney: {
-        type: 'return',
-        destination: 'Chottogram - Dhaka',
-        date: '24 June, 2021 (Thursday)'
-      }
-    });
+    setJourney(require('../../data/journey.json'));
   }, []);
 
   const handleDestinationChange = type => setActiveJourney(type);
