@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import Icon from '@mdi/react';
 import { mdiAccount, mdiClose, mdiMenu } from '@mdi/js';
 import { Link, NavLink } from 'react-router-dom';
 
 import { MenuIcon, SpinWheelIcon } from '../assets/icons';
 import { ReactComponent as Logo } from '../assets/logo.svg';
-import { useState } from 'react';
 
 const menu = [
   { title: 'Flight', path: '/flight' },
@@ -22,6 +22,7 @@ const menu = [
 export const Header = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
   const handleMobileMenu = () => setIsMobileMenu(!isMobileMenu);
+  const handleNavigate = () => setIsMobileMenu(false);
 
   return (
     <header class="header">
@@ -33,7 +34,9 @@ export const Header = () => {
           <ul className="header__menu">
             {menu.map(item => (
               <li key={item.path} className="header__menu__item">
-                <NavLink to={item.path}>{item.title}</NavLink>
+                <NavLink to={item.path} onClick={handleNavigate}>
+                  {item.title}
+                </NavLink>
               </li>
             ))}
           </ul>

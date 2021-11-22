@@ -23,6 +23,7 @@
     &__body {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
       gap: 2rem;
 
       & > * {
@@ -50,7 +51,7 @@
   &__tripcoin {
     display: flex;
     justify-content: flex-end;
-    align-items: top;
+    align-items: center;
     gap: 0.5rem;
   }
 
