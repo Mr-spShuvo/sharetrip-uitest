@@ -1,7 +1,8 @@
-import React from 'react';
+import Icon from '@mdi/react';
+import { mdiAccount } from '@mdi/js';
 import { Link, NavLink } from 'react-router-dom';
-import { ProfileBoxIcon } from '../assets/icons';
 
+import { MenuIcon, SpinWheelIcon } from '../assets/icons';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 
 const menu = [
@@ -21,23 +22,26 @@ export const Header = () => {
   return (
     <header class="header">
       <div className="container">
-        <div className="header__logo">
+        <Link to="/" className="header__logo">
           <Logo />
-        </div>
+        </Link>
         <nav className="header__nav">
           <ul className="header__menu">
-            <li className="header__menu__item">
-              {menu.map(item => (
-                <NavLink key={item.path} to={item.path}>
-                  {item.title}
-                </NavLink>
-              ))}
-            </li>
+            {menu.map(item => (
+              <li key={item.path} className="header__menu__item">
+                <NavLink to={item.path}>{item.title}</NavLink>
+              </li>
+            ))}
           </ul>
           <div className="header__actions">
-            <Link to="/spin">Spin To Win</Link>
+            <Link to="/spin">
+              <SpinWheelIcon /> Spin To Win
+            </Link>
             <Link to="/account">
-              <ProfileBoxIcon />
+              <span>
+                <Icon path={mdiAccount} />
+              </span>
+              <MenuIcon />
             </Link>
           </div>
         </nav>

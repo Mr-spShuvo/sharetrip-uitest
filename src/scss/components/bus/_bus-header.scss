@@ -1,0 +1,70 @@
+.bus-header {
+  background-color: $color-primary-dark;
+  box-shadow: $shadow-md;
+  padding: 1rem 0;
+
+  & > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__journey {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    padding: 1.2rem 2rem;
+    opacity: 0.6;
+
+    &.active {
+      opacity: 1;
+      background-color: rgba($color-white, 0.1);
+      border-radius: 0.6rem;
+    }
+
+    svg {
+      width: 4.8rem;
+      height: 4.8rem;
+
+      & > path {
+        fill: $color-white;
+      }
+    }
+
+    &__info {
+      color: $color-white;
+      &:hover {
+        cursor: pointer;
+      }
+
+      p {
+        opacity: 0.7;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: $font-semibold;
+      }
+
+      span {
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 1.2rem;
+        font-weight: $font-medium;
+      }
+    }
+  }
+
+  &__direction {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      opacity: 0.6;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}

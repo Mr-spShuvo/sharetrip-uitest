@@ -1,6 +1,8 @@
 @import './modules/abstract';
 @import './modules/mixins';
 @import './modules/base';
-@import './modules/global';
+@import './modules/utils';
 
 @import './components/header';
+
+@import './components/bus/bus-header';

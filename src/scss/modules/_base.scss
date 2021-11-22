@@ -10,18 +10,14 @@
 }
 
 html {
-  font-size: 50%; //8px
+  font-size: 62.5%; //10px
 
-  @include media-queries(atSmall) {
+  @include media-queries(atLarge) {
     font-size: 56.25%; //9px
   }
 
-  @include media-queries(atLarge) {
-    font-size: 62.5%; //10px
-  }
-
-  @include media-queries(atLarger) {
-    font-size: 75%; //12px
+  @include media-queries(atSmall) {
+    font-size: 50%; //8px
   }
 }
 
@@ -30,12 +26,19 @@ body {
   font-weight: $font-regular;
   font-size: 1.4rem;
   color: $color-text;
-
-  @include media-queries(atSmall) {
-    font-size: 1.3rem;
-  }
 }
 
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  outline-color: transparent;
+  border: none;
 }

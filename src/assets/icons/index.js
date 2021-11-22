@@ -1,10 +1,10 @@
-export { ReactComponent as ArrowMoveForwardIcon } from './arrow-move-forward.svg';
-export { ReactComponent as ArrowMoveBackwardIcon } from './arrow-move-backward.svg';
-export { ReactComponent as BusMoveBackwardIcon } from './bus-move-backward.svg';
-export { ReactComponent as BusMoveForwardIcon } from './bus-move-forward.svg';
+export { ReactComponent as ArrowMoveOnwardIcon } from './arrow-move-onward.svg';
+export { ReactComponent as ArrowMoveReturnIcon } from './arrow-move-return.svg';
+export { ReactComponent as BusMoveOnwardIcon } from './bus-move-onward.svg';
+export { ReactComponent as BusMoveReturnIcon } from './bus-move-return.svg';
 export { ReactComponent as CoinIcon } from './coin.svg';
 export { ReactComponent as DiamondIcon } from './diamond.svg';
-export { ReactComponent as ProfileBoxIcon } from './profile.svg';
+export { ReactComponent as MenuIcon } from './menu.svg';
 export { ReactComponent as SpinWheelIcon } from './spin-wheel.svg';
 export { ReactComponent as TripCoinIcon } from './trip-coin.svg';
 export { ReactComponent as ZapIcon } from './zap.svg';
