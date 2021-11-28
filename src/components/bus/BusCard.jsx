@@ -42,7 +42,7 @@ export const BusCard = ({ busInfo }) => {
                 <span>{busInfo.to?.place}</span> {busInfo.to?.time}
               </h2>
               <p className="bus-card__content">{busInfo.to?.departedPlace}</p>
-              <p className="bus-card__meta">{busInfo.to?.estimatedTime}</p>
+              <p className="bus-card__meta">{busInfo.to?.date}</p>
             </div>
           </div>
         </div>
